@@ -158,3 +158,27 @@ body {
     color: var(--gray-600);
 }
 
+/* Stats Section */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+ 
+.stat-card {
+    background: var(--white);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--gray-200);
+}
+ 
+.stat-number {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--imperial-blue);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
