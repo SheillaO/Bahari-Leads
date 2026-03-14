@@ -4,13 +4,14 @@
  
 A free, Africa-first sales lead tracking Chrome extension built to rival Apollo.io's $119/month platform. Designed for African businesses that need powerful prospecting tools without the prohibitive costs.
 
+---
+
 <div align="center">
   <img src="bahari.png" alt="Bahari Leads Extension" width="400">
 </div>
 
 
-
-
+---
 
 ## 🚀 Live Demo
 
