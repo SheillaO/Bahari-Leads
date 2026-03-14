@@ -285,3 +285,26 @@ body {
     line-height: 1.5;
 }
 
+/* Footer */
+.footer {
+    background: var(--gray-100);
+    padding: 12px 20px;
+    text-align: center;
+    border-top: 1px solid var(--gray-200);
+}
+ 
+.footer p {
+    font-size: 11px;
+    color: var(--gray-600);
+}
+ 
+.footer a {
+    color: var(--imperial-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+.footer a:hover {
+    text-decoration: underline;
+}
+
