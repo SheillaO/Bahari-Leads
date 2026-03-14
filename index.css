@@ -98,3 +98,27 @@ body {
     gap: 8px;
     margin-bottom: 12px;
 }
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+ 
+.btn-icon {
+    font-size: 14px;
+}
+ 
+.btn-primary {
+    background: var(--imperial-blue);
+    color: var(--white);
+}
