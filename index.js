@@ -56,3 +56,11 @@ function render(leads) {
     // Update lead counter
     leadCountEl.textContent = leads.length
 }
+
+// Your original delete function (KEPT EXACTLY!)
+deleteBtn.addEventListener("dblclick", function() {
+    localStorage.clear()
+    myLeads = []
+    render(myLeads)
+    updateStats()
+})
