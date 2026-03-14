@@ -211,3 +211,53 @@ body {
     transition: all 0.2s ease;
 }
 
+.btn-danger {
+    color: var(--ruby-red);
+}
+ 
+.btn-danger:hover {
+    background: rgba(177, 15, 46, 0.1);
+}
+ 
+/* Leads List */
+.leads-list {
+    list-style: none;
+    padding: 0;
+    max-height: 280px;
+    overflow-y: auto;
+}
+ 
+.leads-list li {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+.leads-list li:hover {
+    border-color: var(--imperial-blue);
+    box-shadow: 0 2px 8px rgba(10, 36, 114, 0.1);
+    transform: translateX(2px);
+}
+ 
+.leads-list a {
+    display: block;
+    padding: 12px;
+    color: var(--gray-900);
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.4;
+    word-break: break-all;
+}
+ 
+.leads-list a:hover {
+    color: var(--imperial-blue);
+}
+ 
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    display: none;
+}
