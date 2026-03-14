@@ -138,4 +138,23 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(19, 111, 99, 0.3);
 }
+ .input-field {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid var(--gray-200);
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+}
  
+.input-field:focus {
+    outline: none;
+    border-color: var(--imperial-blue);
+    box-shadow: 0 0 0 3px rgba(10, 36, 114, 0.1);
+}
+ 
+.input-field::placeholder {
+    color: var(--gray-600);
+}
+
