@@ -261,3 +261,27 @@ body {
     padding: 40px 20px;
     display: none;
 }
+
+ 
+.empty-state.show {
+    display: block;
+}
+ 
+.empty-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+ 
+.empty-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 8px;
+}
+ 
+.empty-text {
+    font-size: 13px;
+    color: var(--gray-600);
+    line-height: 1.5;
+}
+
