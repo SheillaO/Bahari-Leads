@@ -45,6 +45,16 @@
                 placeholder="Enter LinkedIn URL, website, or company name...">
         </section>
 
+        <div class="category-selector">
+            <label>Category:</label>
+            <select id="category-select">
+                <option value="Hot Lead">🔥 Hot Lead</option>
+                <option value="Warm Lead">☀️ Warm Lead</option>
+                <option value="Cold Lead">❄️ Cold Lead</option>
+                <option value="Follow-up">📞 Follow-up</option>
+            </select>
+        </div>
+
         <!-- Stats Section -->
         <section class="stats">
             <div class="stat-card">
@@ -60,6 +70,11 @@
                 <div class="stat-label">All Time</div>
             </div>
         </section>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" class="input-field" placeholder="🔍 Search leads..."
+                oninput="searchLeads(this.value)">
+        </div>
 
         <!-- Saved Leads Section -->
         <section class="leads-section">
