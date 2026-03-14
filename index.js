@@ -13,16 +13,15 @@ let todayCount = 0;
 let weekCount = 0;
 let totalCount = 0;
 
-// Initialize on load
+
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
     render(myLeads)
 }
  
-// Update stats on load
 updateStats()
  
-// Your original tab button functionality (KEPT EXACTLY!)
+
 tabBtn.addEventListener("click", function(){    
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         myLeads.push(tabs[0].url)
@@ -32,7 +31,7 @@ tabBtn.addEventListener("click", function(){
     })
 })
 
-// Your original render function (ENHANCED with empty state)
+
 function render(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i++) {
@@ -46,18 +45,17 @@ function render(leads) {
     }
     ulEl.innerHTML = listItems
     
-    // Show/hide empty state
+  
     if (leads.length === 0) {
         emptyState.classList.add("show")
     } else {
         emptyState.classList.remove("show")
     }
     
-    // Update lead counter
     leadCountEl.textContent = leads.length
 }
 
-// Your original delete function (KEPT EXACTLY!)
+
 deleteBtn.addEventListener("dblclick", function() {
     localStorage.clear()
     myLeads = []
@@ -73,7 +71,7 @@ function cycleCategory() {
   // Show category on lead card
 }
 
-// Your original input button functionality (KEPT EXACTLY!)
+
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
@@ -92,15 +90,15 @@ function searchLeads(query) {
   render(filtered);
 }
 
-// NEW FUNCTION: Update stats (using your existing patterns!)
+
 function updateStats() {
     totalCount = myLeads.length
     
-    // Simple stats - you can enhance these later!
+    
     todayCount = myLeads.length
     weekCount = myLeads.length
     
-    // Update UI
+  
     document.getElementById("today-count").textContent = todayCount
     document.getElementById("week-count").textContent = weekCount
     document.getElementById("total-count").textContent = totalCount
