@@ -8,7 +8,7 @@ A free, Africa-first sales lead tracking Chrome extension built to rival Apollo.
 
 ## 🚀 Live Demo
 
-[![Netlify Status](https://img.shields.io)](https://baharileads.netlify.app/)
+(https://baharileads.netlify.app/)
 
 ## 🎯 The Problem
  
