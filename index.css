@@ -122,3 +122,20 @@ body {
     background: var(--imperial-blue);
     color: var(--white);
 }
+.btn-primary:hover {
+    background: #0c2d91;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(10, 36, 114, 0.3);
+}
+ 
+.btn-secondary {
+    background: var(--blue-spruce);
+    color: var(--white);
+}
+ 
+.btn-secondary:hover {
+    background: #178975;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(19, 111, 99, 0.3);
+}
+ 
