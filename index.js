@@ -31,3 +31,28 @@ tabBtn.addEventListener("click", function(){
         updateStats()
     })
 })
+
+// Your original render function (ENHANCED with empty state)
+function render(leads) {
+    let listItems = ""
+    for (let i = 0; i < leads.length; i++) {
+        listItems += `
+            <li>
+                <a target='_blank' href='${leads[i]}'>
+                    ${leads[i]}
+                </a>
+            </li>
+        `
+    }
+    ulEl.innerHTML = listItems
+    
+    // Show/hide empty state
+    if (leads.length === 0) {
+        emptyState.classList.add("show")
+    } else {
+        emptyState.classList.remove("show")
+    }
+    
+    // Update lead counter
+    leadCountEl.textContent = leads.length
+}
