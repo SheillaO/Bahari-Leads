@@ -4,9 +4,11 @@
  
 A free, Africa-first sales lead tracking Chrome extension built to rival Apollo.io's $119/month platform. Designed for African businesses that need powerful prospecting tools without the prohibitive costs.
 
+
+
 ## 🚀 Live Demo
 
-View Live Demo <https://baharileads.netlify.app/>
+[![Netlify Status](https://img.shields.io)](https://baharileads.netlify.app/)
 
 ## 🎯 The Problem
  
