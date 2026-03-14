@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!-- Header -->
+    
     <header class="header">
         <div class="logo">
             <span class="logo-icon">🌊</span>
@@ -21,3 +21,70 @@
             <span id="lead-count">0</span> leads saved
         </div>
     </header>
+
+    
+    <main class="container">
+        <!--Save Section -->
+        <section class="quick-save">
+            <h2 class="section-title">Quick Save</h2>
+    
+            <div class="action-buttons">
+                <button id="tab-btn" class="btn btn-primary">
+                    <span class="btn-icon">📌</span>
+                    Save This Page
+                </button>
+    
+                <button id="input-btn" class="btn btn-secondary">
+                    <span class="btn-icon">➕</span>
+                    Add Custom Lead
+                </button>
+            </div>
+
+                <input type="text" id="input-el" class="input-field" placeholder="Enter LinkedIn URL, website, or company name...">
+                </section>
+                
+                <!-- Stats Section -->
+                <section class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="today-count">0</div>
+                        <div class="stat-label">Today</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="week-count">0</div>
+                        <div class="stat-label">This Week</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="total-count">0</div>
+                        <div class="stat-label">All Time</div>
+                    </div>
+                </section>
+
+                    <!-- Saved Leads Section -->
+                    <section class="leads-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Saved Leads</h2>
+                            <button id="delete-btn" class="btn-text btn-danger">
+                                Clear All
+                            </button>
+                        </div>
+                    
+                        <ul id="ul-el" class="leads-list">
+                            <!-- Leads will be rendered here -->
+                        </ul>
+                    
+                        <div id="empty-state" class="empty-state">
+                            <div class="empty-icon">🎯</div>
+                            <p class="empty-title">No leads saved yet</p>
+                            <p class="empty-text">Click "Save This Page" while on LinkedIn, company websites, or add custom URLs</p>
+                        </div>
+                    </section>
+                    </main>
+
+                    <footer class="footer">
+                        <p>Made in Nairobi 🇰🇪 • <a href="#" target="_blank">Bahari Leads</a></p>
+                    </footer>
+                    
+                    <script src="index.js"></script>
+                    </body>
+                    
+                    </html>
