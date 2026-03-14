@@ -65,6 +65,14 @@ deleteBtn.addEventListener("dblclick", function() {
     updateStats()
 })
 
+let categories = ["Hot Lead", "Warm Lead", "Cold Lead", "Follow-up"];
+let currentCategory = 0;
+
+function cycleCategory() {
+  currentCategory = (currentCategory + 1) % categories.length;
+  // Show category on lead card
+}
+
 // Your original input button functionality (KEPT EXACTLY!)
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
@@ -73,6 +81,16 @@ inputBtn.addEventListener("click", function() {
     render(myLeads)
     updateStats()
 })
+
+function searchLeads(query) {
+  let filtered = [];
+  for (let i = 0; i < myLeads.length; i++) {
+    if (myLeads[i].includes(query)) {
+      filtered.push(myLeads[i]);
+    }
+  }
+  render(filtered);
+}
 
 // NEW FUNCTION: Update stats (using your existing patterns!)
 function updateStats() {
