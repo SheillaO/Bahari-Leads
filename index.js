@@ -64,3 +64,13 @@ deleteBtn.addEventListener("dblclick", function() {
     render(myLeads)
     updateStats()
 })
+
+// Your original input button functionality (KEPT EXACTLY!)
+inputBtn.addEventListener("click", function() {
+    myLeads.push(inputEl.value)
+    inputEl.value = ""
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+    render(myLeads)
+    updateStats()
+})
+
