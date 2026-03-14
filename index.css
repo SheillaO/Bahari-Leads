@@ -182,3 +182,32 @@ body {
     margin-bottom: 4px;
 }
 
+.stat-label {
+    font-size: 11px;
+    color: var(--gray-600);
+    font-weight: 500;
+}
+ 
+/* Leads Section */
+.leads-section {
+    margin-bottom: 20px;
+}
+ 
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+ 
+.btn-text {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
