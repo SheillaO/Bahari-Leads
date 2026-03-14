@@ -74,3 +74,16 @@ inputBtn.addEventListener("click", function() {
     updateStats()
 })
 
+// NEW FUNCTION: Update stats (using your existing patterns!)
+function updateStats() {
+    totalCount = myLeads.length
+    
+    // Simple stats - you can enhance these later!
+    todayCount = myLeads.length
+    weekCount = myLeads.length
+    
+    // Update UI
+    document.getElementById("today-count").textContent = todayCount
+    document.getElementById("week-count").textContent = weekCount
+    document.getElementById("total-count").textContent = totalCount
+}
